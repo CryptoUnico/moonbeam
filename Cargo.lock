@@ -1494,6 +1494,17 @@ dependencies = [
 ]
 
 [[package]]
+name = "erc20-transfer"
+version = "0.1.0"
+dependencies = [
+ "frame-support",
+ "frame-system",
+ "parity-scale-codec",
+ "sp-core",
+ "sp-runtime",
+]
+
+[[package]]
 name = "errno"
 version = "0.2.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -4123,6 +4134,7 @@ dependencies = [
  "cumulus-parachain-system",
  "cumulus-primitives",
  "cumulus-runtime",
+ "erc20-transfer",
  "fp-rpc",
  "frame-executive",
  "frame-support",
@@ -4163,6 +4175,8 @@ dependencies = [
  "sp-version",
  "stake",
  "substrate-wasm-builder 3.0.0 (git+https://github.com/paritytech/substrate)",
+ "support",
+ "x-transfer",
 ]
 
 [[package]]
@@ -9514,6 +9528,7 @@ dependencies = [
  "sp-io",
  "sp-runtime",
  "sp-std",
+ "support",
 ]
 
 [[package]]
@@ -9824,6 +9839,18 @@ name = "subtle"
 version = "2.4.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "1e81da0851ada1f3e9d4312c704aa4f8806f0f9d69faaf8df2f3464b4a9437c2"
+
+[[package]]
+name = "support"
+version = "0.1.0"
+dependencies = [
+ "frame-support",
+ "parity-scale-codec",
+ "serde",
+ "sp-core",
+ "sp-runtime",
+ "sp-std",
+]
 
 [[package]]
 name = "syn"
@@ -11166,6 +11193,17 @@ name = "wyz"
 version = "0.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "85e60b0d1b5f99db2556934e21937020776a5d31520bf169e851ac44e6420214"
+
+[[package]]
+name = "x-transfer"
+version = "0.1.0"
+dependencies = [
+ "frame-support",
+ "frame-system",
+ "parity-scale-codec",
+ "sp-core",
+ "sp-runtime",
+]
 
 [[package]]
 name = "x25519-dalek"

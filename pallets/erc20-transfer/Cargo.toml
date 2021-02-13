@@ -1,0 +1,23 @@
+[package]
+authors = ["PureStake"]
+edition = "2018"
+name = "erc20-transfer"
+version = "0.1.0"
+
+[dependencies]
+parity-scale-codec = { version = "2.0.0", default-features = false, features = ["derive"] }
+
+frame-support = { git = "https://github.com/paritytech/substrate", default-features = false, branch = "master" }
+frame-system = { git = "https://github.com/paritytech/substrate", default-features = false, branch = "master" }
+sp-core = { git = "https://github.com/paritytech/substrate", default-features = false, branch = "master" }
+sp-runtime = { git = "https://github.com/paritytech/substrate", default-features = false, branch = "master" }
+
+[features]
+default = ["std"]
+std = [
+    "parity-scale-codec/std",
+    "frame-support/std",
+    "frame-system/std",
+    "sp-core/std",
+    "sp-runtime/std",
+]

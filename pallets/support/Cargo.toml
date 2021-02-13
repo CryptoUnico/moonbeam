@@ -1,0 +1,24 @@
+[package]
+name = "support"
+version = "0.1.0"
+authors = ["PureStake"]
+edition = "2018"
+
+[dependencies]
+frame-support = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
+parity-scale-codec = { version = "2.0.0", default-features = false }
+serde = { version = "1.0.101", optional = true }
+sp-core = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
+sp-runtime = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
+sp-std = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
+
+[features]
+default = ["std"]
+std = [
+	"frame-support/std",
+	"parity-scale-codec/std",
+	"serde",
+	"sp-core/std",
+	"sp-runtime/std",
+	"sp-std/std",
+]

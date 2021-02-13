@@ -52,7 +52,6 @@ mod inflation;
 pub use inflation::{InflationInfo, Range};
 #[cfg(test)]
 pub(crate) mod mock;
-mod set;
 #[cfg(test)]
 mod tests;
 use frame_support::{
@@ -62,7 +61,7 @@ use frame_support::{
 };
 use frame_system::{ensure_signed, Config as System};
 use parity_scale_codec::{Decode, Encode};
-use set::OrderedSet;
+use support::OrderedSet;
 use sp_runtime::{
 	traits::{AtLeast32BitUnsigned, Zero},
 	DispatchResult, Perbill, RuntimeDebug,

@@ -14,7 +14,8 @@
 // You should have received a copy of the GNU General Public License
 // along with Moonbeam.  If not, see <http://www.gnu.org/licenses/>.
 
-/* TODO: use orml_utilities::OrderedSet without leaking substrate v2.0 dependencies*/
+//! Clone of ORML-util objects used in Moonbeam runtime so we don't have to sync dependency updates
+//! [orml](https://github.com/open-web3-stack/open-runtime-module-library)
 use parity_scale_codec::{Decode, Encode};
 #[cfg(feature = "std")]
 use serde::{Deserialize, Serialize};
